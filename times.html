@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="times.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="times.js"></script>
+    
+</head>
+<body>
+        <div class="container">
+                <div class="row ">
+                        <div class="col col-md-12 text-center bg-dark text-white jumbotron">
+                          <span> New York Times Search</span> 
+                        </div>
+                </div>
+               
+                <div class="tableDiv border border-dark rounded">
+                <div class="bg-dark text-white rounded">
+                        <div class="col col-md-12 border rounded">
+                           <span class="rounded">Search Parameters</span>  
+                        </div>
+                </div>     
+                <div class="px-3">
+                        <span>Search term:</span> 
+                        <input class="form-control" type="text" placeholder="Search">
+
+                </div>
+               
+                <div class="px-3">
+                        <label for="exampleFormControlSelect1">Number of Records to Retrieve:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>5</option>
+                        <option>10</option>
+      
+                        </select>
+
+                </div>
+                
+                <div class="px-3">
+                        <span>Start Year(Optional):</span> 
+                        <input class="form-control" type="text" placeholder="Search">
+ 
+                </div>
+                
+                
+                <div class="px-3">
+                        <span>End Year(optional)</span> 
+                        <input class="form-control" type="text" placeholder="Search">
+     
+                </div>
+
+                <div class="px-3 py-3">
+                <button type="button" class="btn btn-secondary" id="text">Seach</button>
+                <button type="button" class="btn btn-secondary">Clear Results</button>
+                </div>
+            
+                </div>
+
+
+
+                <br>
+                <div>
+                        <div class="col col-md-12 text-center border rounded bg-dark text-white">
+                           <span>Top articles </span>
+                        </div>
+                </div>
+                    <div id="content"> <!---top article container--> 
+                      
+                    </div>
+                
+            </div>
+</body>
+</html>
